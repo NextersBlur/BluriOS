@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Create Questions View Controller-->
+        <scene sceneID="jfL-xp-MVt">
+            <objects>
+                <viewController storyboardIdentifier="CreateQuestionsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GYv-sp-D8H" customClass="CreateQuestionsViewController" customModule="_0DoC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T3Q-7z-b4f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="group10" translatesAutoresizingMaskIntoConstraints="NO" id="2ZG-Gn-Lpi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="불현듯 떠나는 여행을 즐긴다." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jd0-3x-n2W">
+                                <rect key="frame" x="51" y="446" width="270" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="qF1-jr-drN"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="발라드보다 힙합을 좋아한다." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="plE-l6-W90">
+                                <rect key="frame" x="51" y="373" width="270" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="pFd-AZ-Njt"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영혼의 친구를 찾아드릴게요. 전송할 OX질문을 작성하세요. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvf-Qp-LYv">
+                                <rect key="frame" x="50" y="140" width="248" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="66" id="MdZ-Zs-TrZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.5607843137254902" green="0.3411764705882353" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="맥주보다 소주가 좋다." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jTV-uM-l9v">
+                                <rect key="frame" x="51" y="227" width="270" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ZWn-rl-d2V"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="막창 대창을 즐겨 먹는다." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Dpy-YS-CpD">
+                                <rect key="frame" x="51" y="300" width="270" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="N9G-1t-OTP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="겨울엔 호떡보다 붕어빵이다." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="nwf-qt-Ph4">
+                                <rect key="frame" x="51" y="519" width="270" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="r4u-e8-Eqi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osS-DQ-8Ga">
+                                <rect key="frame" x="65" y="660" width="245" height="58"/>
+                                <state key="normal" image="finishGray"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ih-sB-4sh">
+                                <rect key="frame" x="16" y="61" width="11" height="22"/>
+                                <state key="normal" image="group7"/>
+                                <connections>
+                                    <action selector="backButtonClicked:" destination="GYv-sp-D8H" eventType="touchUpInside" id="w2E-En-kjE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zQp-5V-82y" firstAttribute="trailing" secondItem="osS-DQ-8Ga" secondAttribute="trailing" constant="65" id="0vL-j5-0hD"/>
+                            <constraint firstItem="zQp-5V-82y" firstAttribute="bottom" secondItem="osS-DQ-8Ga" secondAttribute="bottom" constant="60" id="1Ev-k3-dHp"/>
+                            <constraint firstItem="zQp-5V-82y" firstAttribute="trailing" secondItem="jTV-uM-l9v" secondAttribute="trailing" constant="54" id="2Vr-ZG-hF7"/>
+                            <constraint firstItem="jd0-3x-n2W" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" constant="51" id="Ap4-Ww-0Lr"/>
+                            <constraint firstItem="jvf-Qp-LYv" firstAttribute="top" secondItem="zQp-5V-82y" secondAttribute="top" constant="96" id="BuD-WF-oTl"/>
+                            <constraint firstItem="jTV-uM-l9v" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" constant="51" id="CZ7-X2-2HD"/>
+                            <constraint firstItem="Dpy-YS-CpD" firstAttribute="top" secondItem="jTV-uM-l9v" secondAttribute="bottom" constant="13" id="EJ1-Ub-aGi"/>
+                            <constraint firstItem="4Ih-sB-4sh" firstAttribute="top" secondItem="zQp-5V-82y" secondAttribute="top" constant="17" id="EKd-Qc-dr4"/>
+                            <constraint firstItem="jTV-uM-l9v" firstAttribute="top" secondItem="jvf-Qp-LYv" secondAttribute="bottom" constant="21" id="GDr-F1-FIi"/>
+                            <constraint firstItem="2ZG-Gn-Lpi" firstAttribute="bottom" secondItem="zQp-5V-82y" secondAttribute="bottom" id="KMm-XH-ONc"/>
+                            <constraint firstItem="zQp-5V-82y" firstAttribute="trailing" secondItem="jd0-3x-n2W" secondAttribute="trailing" constant="54" id="MUg-6j-WLU"/>
+                            <constraint firstItem="nwf-qt-Ph4" firstAttribute="top" secondItem="jd0-3x-n2W" secondAttribute="bottom" constant="13" id="QtI-Ny-sxJ"/>
+                            <constraint firstItem="zQp-5V-82y" firstAttribute="trailing" secondItem="plE-l6-W90" secondAttribute="trailing" constant="54" id="Szg-KV-NlY"/>
+                            <constraint firstItem="zQp-5V-82y" firstAttribute="trailing" secondItem="nwf-qt-Ph4" secondAttribute="trailing" constant="54" id="U2z-ue-0m7"/>
+                            <constraint firstItem="osS-DQ-8Ga" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" constant="65" id="Uuj-a4-J0t"/>
+                            <constraint firstItem="plE-l6-W90" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" constant="51" id="Wtw-Vv-MCr"/>
+                            <constraint firstItem="plE-l6-W90" firstAttribute="top" secondItem="Dpy-YS-CpD" secondAttribute="bottom" constant="13" id="ZJ9-f0-yRe"/>
+                            <constraint firstItem="zQp-5V-82y" firstAttribute="trailing" secondItem="Dpy-YS-CpD" secondAttribute="trailing" constant="54" id="cGF-99-QPz"/>
+                            <constraint firstItem="nwf-qt-Ph4" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" constant="51" id="cGF-9d-cTZ"/>
+                            <constraint firstItem="4Ih-sB-4sh" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" constant="16" id="dA3-Y8-Uet"/>
+                            <constraint firstItem="jvf-Qp-LYv" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" constant="50" id="dff-5e-Ev0"/>
+                            <constraint firstItem="jd0-3x-n2W" firstAttribute="top" secondItem="plE-l6-W90" secondAttribute="bottom" constant="13" id="fmH-OR-lCq"/>
+                            <constraint firstItem="zQp-5V-82y" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="jvf-Qp-LYv" secondAttribute="trailing" constant="77" id="huF-01-8oI"/>
+                            <constraint firstItem="2ZG-Gn-Lpi" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" id="rfC-jf-hId"/>
+                            <constraint firstItem="2ZG-Gn-Lpi" firstAttribute="trailing" secondItem="zQp-5V-82y" secondAttribute="trailing" id="tCK-h4-wld"/>
+                            <constraint firstItem="2ZG-Gn-Lpi" firstAttribute="top" secondItem="T3Q-7z-b4f" secondAttribute="top" id="wwf-4D-0u4"/>
+                            <constraint firstItem="Dpy-YS-CpD" firstAttribute="leading" secondItem="zQp-5V-82y" secondAttribute="leading" constant="51" id="yOv-am-Sg0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zQp-5V-82y"/>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundImageView" destination="2ZG-Gn-Lpi" id="ev0-gk-Csn"/>
+                        <outlet property="questionCompleteButton" destination="osS-DQ-8Ga" id="cZC-Pc-eyn"/>
+                        <outlet property="titleLabel" destination="jvf-Qp-LYv" id="Myz-uB-8qq"/>
+                        <outletCollection property="questionTextField" destination="jTV-uM-l9v" collectionClass="NSMutableArray" id="S1v-kc-s8d"/>
+                        <outletCollection property="questionTextField" destination="Dpy-YS-CpD" collectionClass="NSMutableArray" id="ttA-Ya-lWj"/>
+                        <outletCollection property="questionTextField" destination="plE-l6-W90" collectionClass="NSMutableArray" id="qo6-N5-2MI"/>
+                        <outletCollection property="questionTextField" destination="jd0-3x-n2W" collectionClass="NSMutableArray" id="Yza-Ne-tiz"/>
+                        <outletCollection property="questionTextField" destination="nwf-qt-Ph4" collectionClass="NSMutableArray" id="Lqs-Xe-r13"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5xu-za-nau" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151.19999999999999" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="finishGray" width="245" height="58"/>
+        <image name="group10" width="375" height="667"/>
+        <image name="group7" width="11" height="21"/>
+    </resources>
+</document>

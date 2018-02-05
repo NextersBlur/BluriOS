@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5j0-fx-Qhk">
+            <objects>
+                <viewController id="hgf-Uc-0VD" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="udT-6s-UVX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="41Background" translatesAutoresizingMaskIntoConstraints="NO" id="igf-Bb-cQ6">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatButtonWhite" translatesAutoresizingMaskIntoConstraints="NO" id="pf7-mk-shQ">
+                                <rect key="frame" x="46" y="529" width="283" height="98"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9w-XX-9fa">
+                                <rect key="frame" x="166" y="281" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU9-KU-ai6">
+                                <rect key="frame" x="0.0" y="20" width="115" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="다시 찾기" image="back"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1yZ-uk-RsZ" firstAttribute="bottom" secondItem="pf7-mk-shQ" secondAttribute="bottom" constant="40" id="Akd-P1-Nuz"/>
+                            <constraint firstItem="igf-Bb-cQ6" firstAttribute="trailing" secondItem="1yZ-uk-RsZ" secondAttribute="trailing" id="Fkb-oT-Cr0"/>
+                            <constraint firstItem="igf-Bb-cQ6" firstAttribute="top" secondItem="udT-6s-UVX" secondAttribute="top" id="Kse-n8-ecq"/>
+                            <constraint firstItem="1yZ-uk-RsZ" firstAttribute="trailing" secondItem="pf7-mk-shQ" secondAttribute="trailing" constant="46" id="V7H-Wd-rS3"/>
+                            <constraint firstItem="igf-Bb-cQ6" firstAttribute="bottom" secondItem="1yZ-uk-RsZ" secondAttribute="bottom" id="YR4-Kj-lFW"/>
+                            <constraint firstItem="pf7-mk-shQ" firstAttribute="leading" secondItem="1yZ-uk-RsZ" secondAttribute="leading" constant="46" id="ohX-TQ-xIf"/>
+                            <constraint firstItem="igf-Bb-cQ6" firstAttribute="leading" secondItem="1yZ-uk-RsZ" secondAttribute="leading" id="wie-B0-Lpp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1yZ-uk-RsZ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zio-4x-dOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-586.39999999999998" y="174.96251874062969"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Oba-eI-N9N">
+            <objects>
+                <viewController id="Rod-2p-dvC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Yu-nK-UHn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="432Background" translatesAutoresizingMaskIntoConstraints="NO" id="cXh-DE-389">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatButtonPurple" translatesAutoresizingMaskIntoConstraints="NO" id="WfO-ZH-gDx">
+                                <rect key="frame" x="65" y="549" width="245" height="58"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이런!! 상대방이 이미  다른 대화에 참여했어요." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9c-bM-bwh">
+                                <rect key="frame" x="57" y="283" width="262" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uL6-uL-OZb">
+                                <rect key="frame" x="0.0" y="20" width="103" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="titleEdgeInsets" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="다시 찾기" image="group7">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1zU-8d-7yU" firstAttribute="trailing" secondItem="WfO-ZH-gDx" secondAttribute="trailing" constant="65" id="9UP-5u-hYN"/>
+                            <constraint firstItem="F9c-bM-bwh" firstAttribute="leading" secondItem="1zU-8d-7yU" secondAttribute="leading" constant="57" id="E21-YE-TGD"/>
+                            <constraint firstItem="1zU-8d-7yU" firstAttribute="bottom" secondItem="WfO-ZH-gDx" secondAttribute="bottom" constant="60" id="O89-4M-hH7"/>
+                            <constraint firstItem="WfO-ZH-gDx" firstAttribute="leading" secondItem="1zU-8d-7yU" secondAttribute="leading" constant="65" id="VHP-Hr-2qq"/>
+                            <constraint firstItem="cXh-DE-389" firstAttribute="top" secondItem="0Yu-nK-UHn" secondAttribute="top" id="ZhW-T3-l6M"/>
+                            <constraint firstItem="cXh-DE-389" firstAttribute="leading" secondItem="1zU-8d-7yU" secondAttribute="leading" id="myy-Oc-zbz"/>
+                            <constraint firstItem="F9c-bM-bwh" firstAttribute="top" secondItem="1zU-8d-7yU" secondAttribute="top" constant="263" id="qsN-lj-ayT"/>
+                            <constraint firstItem="cXh-DE-389" firstAttribute="bottom" secondItem="1zU-8d-7yU" secondAttribute="bottom" id="tb1-9H-rIl"/>
+                            <constraint firstItem="1zU-8d-7yU" firstAttribute="trailing" secondItem="F9c-bM-bwh" secondAttribute="trailing" constant="56" id="teE-Ud-upB"/>
+                            <constraint firstItem="cXh-DE-389" firstAttribute="trailing" secondItem="1zU-8d-7yU" secondAttribute="trailing" id="xHf-J4-S1f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1zU-8d-7yU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rmj-Cz-Mo3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="293.60000000000002" y="178.56071964017991"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="41Background" width="375" height="667"/>
+        <image name="432Background" width="375" height="667"/>
+        <image name="back" width="24" height="24"/>
+        <image name="chatButtonPurple" width="245" height="58"/>
+        <image name="chatButtonWhite" width="283" height="98"/>
+        <image name="group7" width="11" height="21"/>
+    </resources>
+</document>

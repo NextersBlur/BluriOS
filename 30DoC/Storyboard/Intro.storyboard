@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Regular</string>
+            <string>AppleSDGothicNeo-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Intro View Controller-->
+        <scene sceneID="ZFb-sY-r2c">
+            <objects>
+                <viewController storyboardIdentifier="IntroViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="RuQ-hX-DBC" customClass="IntroViewController" customModule="_0DoC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v37-A9-Ilg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11Background" translatesAutoresizingMaskIntoConstraints="NO" id="5Gu-Gq-4SI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지친 하루를 달래줄  당신의 소울메이트,  지금 바로 찾아줄게요." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlK-9o-hpW">
+                                <rect key="frame" x="42" y="138" width="288" height="96"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26.399999618530273"/>
+                                <color key="textColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSN-uR-SbS">
+                                <rect key="frame" x="42" y="499" width="292" height="50"/>
+                                <color key="backgroundColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HxI-2g-GFi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <state key="normal" title="대화 시작하기">
+                                    <color key="titleColor" red="0.30196078431372547" green="0.066666666666666666" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startTalkButtonClicked:" destination="RuQ-hX-DBC" eventType="touchUpInside" id="7qF-iY-Gyc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VBk-th-BWk">
+                                <rect key="frame" x="42" y="564" width="292" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="37A-2F-k5m"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
+                                <state key="normal" title="내 질문 먼저 작성">
+                                    <color key="titleColor" red="0.99991267920000004" green="1" blue="0.99988144639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="createQuestionButtonClicked:" destination="RuQ-hX-DBC" eventType="touchUpInside" id="dLh-Hr-8Wc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99991267919540405" green="1" blue="0.99988144636154175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PH0-Yf-jrP" firstAttribute="trailing" secondItem="ZSN-uR-SbS" secondAttribute="trailing" constant="41" id="3wa-vh-GSh"/>
+                            <constraint firstItem="dlK-9o-hpW" firstAttribute="leading" secondItem="PH0-Yf-jrP" secondAttribute="leading" constant="42" id="9o8-k0-uEf"/>
+                            <constraint firstItem="VBk-th-BWk" firstAttribute="top" secondItem="ZSN-uR-SbS" secondAttribute="bottom" constant="15" id="QOD-36-wsU"/>
+                            <constraint firstItem="5Gu-Gq-4SI" firstAttribute="leading" secondItem="PH0-Yf-jrP" secondAttribute="leading" id="UOw-hn-w5J"/>
+                            <constraint firstItem="PH0-Yf-jrP" firstAttribute="bottom" secondItem="VBk-th-BWk" secondAttribute="bottom" constant="53" id="VO2-iR-NHj"/>
+                            <constraint firstItem="PH0-Yf-jrP" firstAttribute="trailing" secondItem="VBk-th-BWk" secondAttribute="trailing" constant="41" id="Zhl-ae-NDV"/>
+                            <constraint firstItem="VBk-th-BWk" firstAttribute="leading" secondItem="PH0-Yf-jrP" secondAttribute="leading" constant="42" id="ayn-0V-6FY"/>
+                            <constraint firstItem="ZSN-uR-SbS" firstAttribute="leading" secondItem="PH0-Yf-jrP" secondAttribute="leading" constant="42" id="cBZ-SL-vR5"/>
+                            <constraint firstItem="PH0-Yf-jrP" firstAttribute="trailing" secondItem="dlK-9o-hpW" secondAttribute="trailing" constant="45" id="eLM-Ef-lLw"/>
+                            <constraint firstItem="5Gu-Gq-4SI" firstAttribute="bottom" secondItem="PH0-Yf-jrP" secondAttribute="bottom" id="f3U-tn-l5L"/>
+                            <constraint firstItem="5Gu-Gq-4SI" firstAttribute="trailing" secondItem="PH0-Yf-jrP" secondAttribute="trailing" id="gbt-pO-q7n"/>
+                            <constraint firstItem="5Gu-Gq-4SI" firstAttribute="top" secondItem="v37-A9-Ilg" secondAttribute="top" id="nmN-5U-ucV"/>
+                            <constraint firstItem="dlK-9o-hpW" firstAttribute="top" secondItem="PH0-Yf-jrP" secondAttribute="top" constant="118" id="x25-M7-ZAM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PH0-Yf-jrP"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="96d-HA-c19"/>
+                    <connections>
+                        <outlet property="backGroundImage" destination="5Gu-Gq-4SI" id="YrP-hM-ger"/>
+                        <outlet property="createQuestionButton" destination="VBk-th-BWk" id="VfP-OZ-2SZ"/>
+                        <outlet property="startTalkButton" destination="ZSN-uR-SbS" id="sOz-Ja-kec"/>
+                        <outlet property="titleLabel" destination="dlK-9o-hpW" id="UdT-Tf-ssy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHe-gc-Bts" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="446" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="11Background" width="375" height="667"/>
+    </resources>
+</document>
