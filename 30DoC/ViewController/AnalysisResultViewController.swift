@@ -7,12 +7,26 @@
 //
 
 import UIKit
+import FLAnimatedImage
 
 class AnalysisResultViewController: UIViewController {
 
+    @IBOutlet weak var backgroundImage: FLAnimatedImageView!
+    
+    static func instance() -> AnalysisResultViewController? {
+        return UIStoryboard(name: "AnalysisResult", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? AnalysisResultViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let url = Bundle.main.url(forResource: "resultGIF", withExtension: "gif") {
+            if let data = try? Data(contentsOf: url) {
+                let bannerImage = FLAnimatedImage(animatedGIFData: data)
+                self.backgroundImage.animatedImage = bannerImage
+                
+            }
+        }
         // Do any additional setup after loading the view.
     }
 

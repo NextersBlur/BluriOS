@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14711736202EDAEE00AB21F7 /* QuestionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */; };
+		1471173A202EEBED00AB21F7 /* resultGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14711739202EEBED00AB21F7 /* resultGIF.gif */; };
 		147AF04B202EC6930017DB28 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147AF04A202EC6930017DB28 /* ModelController.swift */; };
 		14EBE1AF20087867009DDE87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBE1AE20087867009DDE87 /* AppDelegate.swift */; };
 		14EBE1B120087867009DDE87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBE1B020087867009DDE87 /* ViewController.swift */; };
@@ -40,11 +41,11 @@
 		C2AA182F2021B91F00CB1F86 /* SolveQuestions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AA182E2021B91F00CB1F86 /* SolveQuestions.storyboard */; };
 		C2AA18312021B94500CB1F86 /* SolveQuestionsRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA18302021B94500CB1F86 /* SolveQuestionsRootViewController.swift */; };
 		C2AA18332021B9CF00CB1F86 /* SolveQuestionsDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA18322021B9CF00CB1F86 /* SolveQuestionsDataViewController.swift */; };
-		C2AA18352021B9E400CB1F86 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AA18342021B9E400CB1F86 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataSource.swift; sourceTree = "<group>"; };
+		14711739202EEBED00AB21F7 /* resultGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = resultGIF.gif; sourceTree = "<group>"; };
 		147AF04A202EC6930017DB28 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		14EBE1AB20087867009DDE87 /* 30DoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30DoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EBE1AE20087867009DDE87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		C2AA182E2021B91F00CB1F86 /* SolveQuestions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SolveQuestions.storyboard; sourceTree = "<group>"; };
 		C2AA18302021B94500CB1F86 /* SolveQuestionsRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuestionsRootViewController.swift; sourceTree = "<group>"; };
 		C2AA18322021B9CF00CB1F86 /* SolveQuestionsDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SolveQuestionsDataViewController.swift; sourceTree = "<group>"; };
-		C2AA18342021B9E400CB1F86 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		E322F1F0B84A5870C83941CB /* Pods-30DoC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30DoC.release.xcconfig"; path = "Pods/Target Support Files/Pods-30DoC/Pods-30DoC.release.xcconfig"; sourceTree = "<group>"; };
 		EA3D8679646096E47E2B66A1 /* Pods-30DoC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30DoC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-30DoC/Pods-30DoC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +106,7 @@
 		14EBE1A220087867009DDE87 = {
 			isa = PBXGroup;
 			children = (
+				14711739202EEBED00AB21F7 /* resultGIF.gif */,
 				14EBE1AD20087867009DDE87 /* 30DoC */,
 				14EBE1AC20087867009DDE87 /* Products */,
 				1CF5B864EC74C207AAC096F7 /* Pods */,
@@ -180,7 +181,6 @@
 				C290768D2021AF4C006BEA15 /* QuestionIntroViewController.swift */,
 				C2AA18302021B94500CB1F86 /* SolveQuestionsRootViewController.swift */,
 				C2AA18322021B9CF00CB1F86 /* SolveQuestionsDataViewController.swift */,
-				C2AA18342021B9E400CB1F86 /* DataController.swift */,
 				C208A1CB2022DF0600015075 /* AnalysisViewController.swift */,
 				C208A1CF2022E1D500015075 /* AnalysisResultViewController.swift */,
 				C208A1D32022E43F00015075 /* ChatViewController.swift */,
@@ -293,6 +293,7 @@
 				C204D34820217C4200252C0D /* CreateQuestions.storyboard in Resources */,
 				C208A1CE2022E1CC00015075 /* AnalysisResult.storyboard in Resources */,
 				14EBE1B920087867009DDE87 /* LaunchScreen.storyboard in Resources */,
+				1471173A202EEBED00AB21F7 /* resultGIF.gif in Resources */,
 				14EBE1B620087867009DDE87 /* Assets.xcassets in Resources */,
 				14EBE1B420087867009DDE87 /* Main.storyboard in Resources */,
 				C2AA182F2021B91F00CB1F86 /* SolveQuestions.storyboard in Resources */,
@@ -315,12 +316,14 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-30DoC/Pods-30DoC-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/GradientCircularProgress/GradientCircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/KYCircularProgress/KYCircularProgress.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientCircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYCircularProgress.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,7 +388,6 @@
 				C290768A2021AE6C006BEA15 /* HTTPMethod.swift in Sources */,
 				C29076852021A6F7006BEA15 /* Request.swift in Sources */,
 				C290768E2021AF4C006BEA15 /* QuestionIntroViewController.swift in Sources */,
-				C2AA18352021B9E400CB1F86 /* DataController.swift in Sources */,
 				C208A1CC2022DF0600015075 /* AnalysisViewController.swift in Sources */,
 				C208A1C82022A96B00015075 /* String+.swift in Sources */,
 				14EBE1B120087867009DDE87 /* ViewController.swift in Sources */,

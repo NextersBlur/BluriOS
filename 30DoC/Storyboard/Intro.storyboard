@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11Background" translatesAutoresizingMaskIntoConstraints="NO" id="5Gu-Gq-4SI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Gu-Gq-4SI" customClass="FLAnimatedImageView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지친 하루를 달래줄  당신의 소울메이트,  지금 바로 찾아줄게요." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlK-9o-hpW">
@@ -81,7 +81,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="96d-HA-c19"/>
                     <connections>
-                        <outlet property="backGroundImage" destination="5Gu-Gq-4SI" id="YrP-hM-ger"/>
+                        <outlet property="backgroundImage" destination="5Gu-Gq-4SI" id="YkU-qY-I15"/>
                         <outlet property="createQuestionButton" destination="VBk-th-BWk" id="VfP-OZ-2SZ"/>
                         <outlet property="startTalkButton" destination="ZSN-uR-SbS" id="sOz-Ja-kec"/>
                         <outlet property="titleLabel" destination="dlK-9o-hpW" id="UdT-Tf-ssy"/>
@@ -92,7 +92,4 @@
             <point key="canvasLocation" x="446" y="113"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="11Background" width="375" height="667"/>
-    </resources>
 </document>

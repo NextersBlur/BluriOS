@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import FLAnimatedImage
 
 class AnalysisViewController: UIViewController {
 
+    
+    static func instance() -> AnalysisViewController? {
+        return UIStoryboard(name: "Analysis", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? AnalysisViewController
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

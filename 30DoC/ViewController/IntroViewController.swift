@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import FLAnimatedImage
 
 class IntroViewController: UIViewController {
 
-    @IBOutlet weak var backGroundImage: UIImageView!
+   
+    @IBOutlet weak var backgroundImage: FLAnimatedImageView!
+    
     static func instance() -> IntroViewController? {
         return UIStoryboard(name: "Intro", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? IntroViewController
     }
@@ -23,13 +26,24 @@ class IntroViewController: UIViewController {
         self.initVars()
         
     }
+    
     func initVars(){
         createQuestionButton.layer.cornerRadius = 25
         startTalkButton.layer.cornerRadius = 25
+       
         createQuestionButton.layer.borderColor = UIColor.white.cgColor
         createQuestionButton.layer.borderWidth = 1.0
         titleLabel.attributedText = titleLabel.text?.updateWithSpacing(lineSpacing: 8)
-       
+        
+        if let url = Bundle.main.url(forResource: "resultGIF", withExtension: "gif") {
+            if let data = try? Data(contentsOf: url) {
+                let bannerImage = FLAnimatedImage(animatedGIFData: data)
+                self.backgroundImage.animatedImage = bannerImage
+                
+            }
+        }
+        
+    
     }
   
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +53,7 @@ class IntroViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.isNavigationBarHidden = false
+        
     }
 
     @IBAction private func startTalkButtonClicked(_ sender: Any) {

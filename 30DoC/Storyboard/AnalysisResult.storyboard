@@ -10,17 +10,14 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Analysis Result View Controller-->
         <scene sceneID="5j0-fx-Qhk">
             <objects>
-                <viewController id="hgf-Uc-0VD" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnalysisResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hgf-Uc-0VD" customClass="AnalysisResultViewController" customModule="_0DoC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="udT-6s-UVX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="41Background" translatesAutoresizingMaskIntoConstraints="NO" id="igf-Bb-cQ6">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chatButtonWhite" translatesAutoresizingMaskIntoConstraints="NO" id="pf7-mk-shQ">
                                 <rect key="frame" x="46" y="529" width="283" height="98"/>
                             </imageView>
@@ -37,6 +34,9 @@
                                 <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <state key="normal" title="다시 찾기" image="back"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="igf-Bb-cQ6" customClass="FLAnimatedImageView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -50,6 +50,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1yZ-uk-RsZ"/>
                     </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="igf-Bb-cQ6" id="sGZ-az-ni7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zio-4x-dOM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,7 +109,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="41Background" width="375" height="667"/>
         <image name="432Background" width="375" height="667"/>
         <image name="back" width="24" height="24"/>
         <image name="chatButtonPurple" width="245" height="58"/>

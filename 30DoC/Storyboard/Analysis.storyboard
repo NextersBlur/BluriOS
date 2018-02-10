@@ -9,31 +9,43 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Analysis View Controller-->
         <scene sceneID="irL-iw-DND">
             <objects>
-                <viewController id="LP0-QN-E71" customClass="AnalysisViewController" customModule="_0DoC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnalysisViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LP0-QN-E71" customClass="AnalysisViewController" customModule="_0DoC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lQL-2K-xl1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="41Background" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-a7-MKp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a41Background" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-a7-MKp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUV-DU-3EU">
-                                <rect key="frame" x="166" y="529" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="결과를 분석중입니다..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUV-DU-3EU">
+                                <rect key="frame" x="49" y="565.5" width="277" height="26.5"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gFL-Aq-m4L">
+                                <rect key="frame" x="67" y="245" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0K4-a7-MKp" firstAttribute="trailing" secondItem="hSZ-Hl-4YQ" secondAttribute="trailing" id="KKq-Mw-avn"/>
                             <constraint firstItem="0K4-a7-MKp" firstAttribute="leading" secondItem="hSZ-Hl-4YQ" secondAttribute="leading" id="KL5-j6-6RK"/>
                             <constraint firstItem="0K4-a7-MKp" firstAttribute="top" secondItem="lQL-2K-xl1" secondAttribute="top" id="dCj-ol-ZSb"/>
+                            <constraint firstItem="hSZ-Hl-4YQ" firstAttribute="bottom" secondItem="uUV-DU-3EU" secondAttribute="bottom" constant="75" id="meG-kf-blO"/>
+                            <constraint firstItem="hSZ-Hl-4YQ" firstAttribute="trailing" secondItem="uUV-DU-3EU" secondAttribute="trailing" constant="49" id="unF-eD-NsL"/>
+                            <constraint firstItem="uUV-DU-3EU" firstAttribute="leading" secondItem="hSZ-Hl-4YQ" secondAttribute="leading" constant="49" id="wGe-P8-z2Y"/>
                             <constraint firstItem="0K4-a7-MKp" firstAttribute="bottom" secondItem="hSZ-Hl-4YQ" secondAttribute="bottom" id="wif-63-oBg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hSZ-Hl-4YQ"/>
@@ -45,6 +57,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="41Background" width="375" height="667"/>
+        <image name="a41Background" width="360" height="640"/>
     </resources>
 </document>
