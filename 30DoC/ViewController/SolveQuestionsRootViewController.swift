@@ -10,6 +10,9 @@ import UIKit
 
 class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDelegate {
 
+    @IBOutlet weak var questionProgressBar: UIProgressView!
+    @IBOutlet weak var oButton: UIButton!
+    @IBOutlet weak var xButton: UIButton!
     var pageViewController: UIPageViewController?
     var _modelController: ModelController? = nil
 
@@ -20,10 +23,25 @@ class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDel
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initPageController()
+        oButton.layer.zPosition = 1
+        xButton.layer.zPosition = 1
+        questionProgressBar.layer.zPosition = 1
+        questionProgressBar.transform = questionProgressBar.transform.scaledBy(x: 1, y: 8)
+        questionProgressBar.progressTintColor = UIColor(red: 130/255, green: 82/255, blue: 235/255, alpha: 1)
+
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+    }
     func initPageController(){
-        self.pageViewController = UIPageViewController(transitionStyle: .pageCurl, navigationOrientation: .horizontal, options: nil)
+        self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         self.pageViewController!.delegate = self
         
         let startingViewController: SolveQuestionsDataViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
@@ -81,7 +99,6 @@ extension SolveQuestionsRootViewController {
             return .min
         }
         
-        // In landscape orientation: Set set the spine location to "mid" and the page view controller's view controllers array to contain two view controllers. If the current page is even, set it to contain the current and next view controllers; if it is odd, set the array to contain the previous and current view controllers.
         let currentViewController = self.pageViewController!.viewControllers![0] as! SolveQuestionsDataViewController
         var viewControllers: [UIViewController]
         
