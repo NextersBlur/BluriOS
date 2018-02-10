@@ -10,6 +10,7 @@ import UIKit
 
 class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDelegate {
 
+    @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionProgressBar: UIProgressView!
     @IBOutlet weak var oButton: UIButton!
     @IBOutlet weak var xButton: UIButton!
@@ -25,9 +26,13 @@ class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDel
         self.initPageController()
         oButton.layer.zPosition = 1
         xButton.layer.zPosition = 1
+        questionLabel.layer.zPosition = 1
+        
         questionProgressBar.layer.zPosition = 1
+        
         questionProgressBar.transform = questionProgressBar.transform.scaledBy(x: 1, y: 8)
         questionProgressBar.progressTintColor = UIColor(red: 130/255, green: 82/255, blue: 235/255, alpha: 1)
+        questionProgressBar.progress = 0.1
 
         // Do any additional setup after loading the view.
     }
@@ -49,6 +54,7 @@ class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDel
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
         
         self.pageViewController!.dataSource = self.modelController
+        self.modelController.dataSource = self
         
         self.addChildViewController(self.pageViewController!)
         self.view.addSubview(self.pageViewController!.view)
@@ -59,7 +65,6 @@ class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDel
             pageViewRect = pageViewRect.insetBy(dx: 40.0, dy: 40.0)
         }
         self.pageViewController!.view.frame = pageViewRect
-        
         self.pageViewController!.didMove(toParentViewController: self)
     }
 
@@ -115,3 +120,13 @@ extension SolveQuestionsRootViewController {
         return .mid
     }
 }
+extension SolveQuestionsRootViewController : QuestionDataSource{
+    func passData(count: Int) {
+        
+        questionProgressBar.progress = Float(Double(count)/Double(10))
+        
+    }
+    
+    
+}
+

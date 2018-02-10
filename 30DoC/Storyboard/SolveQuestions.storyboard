@@ -35,9 +35,8 @@
                                 <rect key="frame" x="212" y="404" width="107" height="108"/>
                                 <state key="normal" image="oButton"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXS-gp-NHS">
-                                <rect key="frame" x="166" y="611" width="41" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXS-gp-NHS">
+                                <rect key="frame" x="167" y="611" width="41" height="21"/>
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <color key="textColor" red="0.50980392156862742" green="0.32156862745098036" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -54,10 +53,12 @@
                             <constraint firstItem="RKZ-yd-yBg" firstAttribute="bottom" secondItem="Qfp-dM-Hqj" secondAttribute="bottom" id="XD3-jD-32y"/>
                             <constraint firstItem="hre-Ks-Di8" firstAttribute="leading" secondItem="Qfp-dM-Hqj" secondAttribute="leading" id="c3q-EP-Ljg"/>
                             <constraint firstAttribute="trailing" secondItem="RKZ-yd-yBg" secondAttribute="trailing" id="djS-7K-rmc"/>
+                            <constraint firstItem="AXS-gp-NHS" firstAttribute="centerX" secondItem="Qfp-dM-Hqj" secondAttribute="centerX" id="eq8-va-yBQ"/>
                             <constraint firstItem="dYi-oV-6MX" firstAttribute="top" secondItem="hre-Ks-Di8" secondAttribute="bottom" constant="-263" id="fgy-De-rtq"/>
                             <constraint firstItem="RKZ-yd-yBg" firstAttribute="leading" secondItem="3IX-ce-CD1" secondAttribute="leading" id="nLR-Dq-CEX"/>
                             <constraint firstItem="dYi-oV-6MX" firstAttribute="leading" secondItem="Qfp-dM-Hqj" secondAttribute="leading" constant="60" id="rHI-El-UOO"/>
                             <constraint firstItem="hre-Ks-Di8" firstAttribute="bottom" secondItem="Qfp-dM-Hqj" secondAttribute="bottom" id="s4A-7R-NLv"/>
+                            <constraint firstItem="RKZ-yd-yBg" firstAttribute="top" secondItem="AXS-gp-NHS" secondAttribute="bottom" constant="33" id="uck-fk-Wy7"/>
                             <constraint firstItem="hre-Ks-Di8" firstAttribute="top" secondItem="3IX-ce-CD1" secondAttribute="top" id="z9Y-Iz-B1d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qfp-dM-Hqj"/>
@@ -65,6 +66,7 @@
                     <navigationItem key="navigationItem" id="3Qo-Mr-To7"/>
                     <connections>
                         <outlet property="oButton" destination="bAQ-bc-sHr" id="YpS-R7-ZUf"/>
+                        <outlet property="questionLabel" destination="AXS-gp-NHS" id="4WB-Qg-37t"/>
                         <outlet property="questionProgressBar" destination="RKZ-yd-yBg" id="a9t-J2-NB0"/>
                         <outlet property="xButton" destination="dYi-oV-6MX" id="PqD-g5-Tfs"/>
                     </connections>
@@ -109,6 +111,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ltl-lL-0vn"/>
                     </view>
+                    <connections>
+                        <outlet property="questionCount" destination="Uoc-RE-0Xt" id="fWi-0p-fJa"/>
+                        <outlet property="questionTitle" destination="yry-Qa-rtU" id="tma-hh-Kzg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fne-Re-erB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

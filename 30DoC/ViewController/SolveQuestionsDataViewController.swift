@@ -11,7 +11,10 @@ import UIKit
 class SolveQuestionsDataViewController: UIViewController {
 
     var dataObject: String = ""
-
+    var questionTitleString = ""
+    var questionCountString = ""
+    @IBOutlet weak var questionTitle: UILabel!
+    @IBOutlet weak var questionCount: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

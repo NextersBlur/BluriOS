@@ -11,7 +11,7 @@ import UIKit
 class ModelController: NSObject, UIPageViewControllerDataSource {
     
     var pageData: [String] = []
-    
+    var dataSource : QuestionDataSource?
     
     override init() {
         super.init()
@@ -29,6 +29,8 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "SolveQuestionsDataViewController") as! SolveQuestionsDataViewController
         dataViewController.dataObject = self.pageData[index]
+        dataViewController.questionCountString = "\(index+1)"
+        dataViewController.questionTitleString = self.pageData[index]
         return dataViewController
     }
     
@@ -59,6 +61,9 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         index += 1
         if index == self.pageData.count {
             return nil
+        }
+        if let dataSource = dataSource{
+            dataSource.passData(count: index)
         }
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }

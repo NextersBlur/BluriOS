@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14711736202EDAEE00AB21F7 /* QuestionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */; };
 		147AF04B202EC6930017DB28 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147AF04A202EC6930017DB28 /* ModelController.swift */; };
 		14EBE1AF20087867009DDE87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBE1AE20087867009DDE87 /* AppDelegate.swift */; };
 		14EBE1B120087867009DDE87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBE1B020087867009DDE87 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataSource.swift; sourceTree = "<group>"; };
 		147AF04A202EC6930017DB28 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
 		14EBE1AB20087867009DDE87 /* 30DoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30DoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EBE1AE20087867009DDE87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			children = (
 				C29076872021A735006BEA15 /* User.swift */,
 				C29076892021AE6C006BEA15 /* HTTPMethod.swift */,
+				14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29076882021A735006BEA15 /* User.swift in Sources */,
+				14711736202EDAEE00AB21F7 /* QuestionDataSource.swift in Sources */,
 				C290768020219E03006BEA15 /* BaseNavigationController.swift in Sources */,
 				C2AA18312021B94500CB1F86 /* SolveQuestionsRootViewController.swift in Sources */,
 				C290767920217E80006BEA15 /* Attribute+.swift in Sources */,
