@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AppleSDGothicNeo.ttc">
+            <string>AppleSDGothicNeo-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Solve Questions Root View Controller-->
         <scene sceneID="KPi-Rv-Y4o">
@@ -21,12 +26,44 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="31Background" translatesAutoresizingMaskIntoConstraints="NO" id="hre-Ks-Di8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYi-oV-6MX">
+                                <rect key="frame" x="60" y="404" width="107" height="108"/>
+                                <state key="normal" image="xButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAQ-bc-sHr">
+                                <rect key="frame" x="212" y="404" width="107" height="108"/>
+                                <state key="normal" image="oButton"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Q.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdd-lh-8z9">
+                                <rect key="frame" x="73" y="203" width="106" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" text="LABEL" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xx-oQ-Wej">
+                                <rect key="frame" x="73" y="245" width="230" height="29"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dYi-oV-6MX" firstAttribute="top" relation="lessThanOrEqual" secondItem="5xx-oQ-Wej" secondAttribute="bottom" constant="130" id="3k9-Qp-5sU"/>
                             <constraint firstItem="hre-Ks-Di8" firstAttribute="trailing" secondItem="Qfp-dM-Hqj" secondAttribute="trailing" id="4NW-bR-aAP"/>
+                            <constraint firstItem="Qfp-dM-Hqj" firstAttribute="trailing" secondItem="bAQ-bc-sHr" secondAttribute="trailing" constant="56" id="4cA-Pt-Cmc"/>
+                            <constraint firstItem="Bdd-lh-8z9" firstAttribute="leading" secondItem="Qfp-dM-Hqj" secondAttribute="leading" constant="73" id="755-wK-pbn"/>
+                            <constraint firstItem="5xx-oQ-Wej" firstAttribute="top" secondItem="Bdd-lh-8z9" secondAttribute="bottom" constant="13" id="7FE-yh-UZV"/>
+                            <constraint firstItem="Qfp-dM-Hqj" firstAttribute="trailing" secondItem="5xx-oQ-Wej" secondAttribute="trailing" constant="72" id="KQh-to-leW"/>
+                            <constraint firstItem="bAQ-bc-sHr" firstAttribute="top" secondItem="hre-Ks-Di8" secondAttribute="bottom" constant="-263" id="TEI-e7-D4Z"/>
+                            <constraint firstItem="Qfp-dM-Hqj" firstAttribute="trailing" secondItem="Bdd-lh-8z9" secondAttribute="trailing" constant="196" id="YtX-3Z-tpN"/>
+                            <constraint firstItem="5xx-oQ-Wej" firstAttribute="leading" secondItem="Qfp-dM-Hqj" secondAttribute="leading" constant="73" id="ajs-uN-dZ4"/>
                             <constraint firstItem="hre-Ks-Di8" firstAttribute="leading" secondItem="Qfp-dM-Hqj" secondAttribute="leading" id="c3q-EP-Ljg"/>
+                            <constraint firstItem="Bdd-lh-8z9" firstAttribute="top" secondItem="Qfp-dM-Hqj" secondAttribute="top" constant="183" id="dCH-FL-6fe"/>
+                            <constraint firstItem="dYi-oV-6MX" firstAttribute="top" secondItem="hre-Ks-Di8" secondAttribute="bottom" constant="-263" id="fgy-De-rtq"/>
+                            <constraint firstItem="dYi-oV-6MX" firstAttribute="leading" secondItem="Qfp-dM-Hqj" secondAttribute="leading" constant="60" id="rHI-El-UOO"/>
                             <constraint firstItem="hre-Ks-Di8" firstAttribute="bottom" secondItem="Qfp-dM-Hqj" secondAttribute="bottom" id="s4A-7R-NLv"/>
+                            <constraint firstItem="bAQ-bc-sHr" firstAttribute="top" relation="lessThanOrEqual" secondItem="5xx-oQ-Wej" secondAttribute="bottom" constant="130" id="v6V-7P-nxS"/>
                             <constraint firstItem="hre-Ks-Di8" firstAttribute="top" secondItem="3IX-ce-CD1" secondAttribute="top" id="z9Y-Iz-B1d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Qfp-dM-Hqj"/>
@@ -45,7 +82,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="41Background" translatesAutoresizingMaskIntoConstraints="NO" id="dE5-XK-CyT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="31Background" translatesAutoresizingMaskIntoConstraints="NO" id="dE5-XK-CyT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.63921568630000003" green="0.60660807289999996" blue="0.63826497400000004" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
@@ -67,6 +104,7 @@
     </scenes>
     <resources>
         <image name="31Background" width="375" height="667"/>
-        <image name="41Background" width="375" height="667"/>
+        <image name="oButton" width="107" height="108"/>
+        <image name="xButton" width="107" height="108"/>
     </resources>
 </document>
