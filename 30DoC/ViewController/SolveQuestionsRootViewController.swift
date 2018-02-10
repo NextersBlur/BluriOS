@@ -19,7 +19,7 @@ class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.initPageController()
         // Do any additional setup after loading the view.
     }
     func initPageController(){

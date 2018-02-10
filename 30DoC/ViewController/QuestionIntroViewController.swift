@@ -26,6 +26,7 @@ class QuestionIntroViewController: UIViewController {
         }
 
     }
+    
     func initVars(){
         titleLabel.font = UIFont(name: "AppleSDGothicNeo-Regular",size: 22.0)
         titleLabel.attributedText = titleLabel.text?.updateAttribute(font: "AppleSDGothicNeo-Bold", fontSize: 22.0, applyString: "O, X로 답해주세요.", lineSpacing: 10)
