@@ -16,8 +16,10 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     override init() {
         super.init()
         // Create the data model.
-        let dateFormatter = DateFormatter()
-        pageData = dateFormatter.monthSymbols
+        
+        for i in 0..<10 {
+            pageData.append("\(i)")
+        }
     }
     
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> SolveQuestionsDataViewController? {
@@ -51,10 +53,6 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         
         
         index -= 1
-        if let dataSource = dataSource{
-            dataSource.passData(count: index)
-        }
-        
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
     
@@ -68,10 +66,26 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         if index == self.pageData.count {
             return nil
         }
-        if let dataSource = dataSource{
-            dataSource.passData(count: index)
-        }
+        
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
+    }
+    
+}
+
+extension ModelController : UIPageViewControllerDelegate {
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if completed && finished {
+            var index : Int
+            if let viewController = pageViewController.viewControllers?.last as? SolveQuestionsDataViewController {
+                index = self.indexOfViewController(viewController)
+            } else {
+                index = 0
+            }
+            
+            dataSource?.passData(count: index)
+        }
     }
     
 }

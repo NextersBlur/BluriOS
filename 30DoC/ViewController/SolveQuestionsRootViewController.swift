@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDelegate {
+class SolveQuestionsRootViewController: UIViewController {
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionProgressBar: UIProgressView!
@@ -32,9 +32,9 @@ class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDel
         
         questionProgressBar.transform = questionProgressBar.transform.scaledBy(x: 1, y: 8)
         questionProgressBar.progressTintColor = UIColor(red: 130/255, green: 82/255, blue: 235/255, alpha: 1)
-        questionProgressBar.progress = 0.1
-
-        // Do any additional setup after loading the view.
+        
+        //init progress and label with first state
+        passData(count: 0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -47,13 +47,13 @@ class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDel
     }
     func initPageController(){
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-        self.pageViewController!.delegate = self
         
         let startingViewController: SolveQuestionsDataViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
         let viewControllers = [startingViewController]
         self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: false, completion: {done in })
         
         self.pageViewController!.dataSource = self.modelController
+        self.pageViewController?.delegate = self.modelController
         self.modelController.dataSource = self
         
         self.addChildViewController(self.pageViewController!)
@@ -92,39 +92,12 @@ class SolveQuestionsRootViewController: UIViewController,UIPageViewControllerDel
     */
 
 }
-extension SolveQuestionsRootViewController {
-    func pageViewController(_ pageViewController: UIPageViewController, spineLocationFor orientation: UIInterfaceOrientation) -> UIPageViewControllerSpineLocation {
-        if (orientation == .portrait) || (orientation == .portraitUpsideDown) || (UIDevice.current.userInterfaceIdiom == .phone) {
-            // In portrait orientation or on iPhone: Set the spine position to "min" and the page view controller's view controllers array to contain just one view controller. Setting the spine position to 'UIPageViewControllerSpineLocationMid' in landscape orientation sets the doubleSided property to true, so set it to false here.
-            let currentViewController = self.pageViewController!.viewControllers![0]
-            let viewControllers = [currentViewController]
-            self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: true, completion: {done in })
-            
-            self.pageViewController!.isDoubleSided = false
-            return .min
-        }
-        
-        let currentViewController = self.pageViewController!.viewControllers![0] as! SolveQuestionsDataViewController
-        var viewControllers: [UIViewController]
-        
-        let indexOfCurrentViewController = self.modelController.indexOfViewController(currentViewController)
-        if (indexOfCurrentViewController == 0) || (indexOfCurrentViewController % 2 == 0) {
-            let nextViewController = self.modelController.pageViewController(self.pageViewController!, viewControllerAfter: currentViewController)
-            viewControllers = [currentViewController, nextViewController!]
-        } else {
-            let previousViewController = self.modelController.pageViewController(self.pageViewController!, viewControllerBefore: currentViewController)
-            viewControllers = [previousViewController!, currentViewController]
-        }
-        self.pageViewController!.setViewControllers(viewControllers, direction: .forward, animated: true, completion: {done in })
-        
-        return .mid
-    }
-}
+
 extension SolveQuestionsRootViewController : QuestionDataSource{
     func passData(count: Int) {
-        questionProgressBar.progress = Float(Double(count)/Double(10))
-        questionLabel.text  = "\(count)/10"
-        
+        let pageNumber = count + 1
+        questionProgressBar.progress = Float(pageNumber)/10
+        questionLabel.text  = "\(pageNumber)/10"
     }
     
     
