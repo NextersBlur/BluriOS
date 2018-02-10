@@ -122,8 +122,8 @@ extension SolveQuestionsRootViewController {
 }
 extension SolveQuestionsRootViewController : QuestionDataSource{
     func passData(count: Int) {
-        
         questionProgressBar.progress = Float(Double(count)/Double(10))
+        questionLabel.text  = "\(count)/10"
         
     }
     

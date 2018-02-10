@@ -43,12 +43,18 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     // MARK: - Page View Controller Data Source
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        
         var index = self.indexOfViewController(viewController as! SolveQuestionsDataViewController)
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
         
+        
         index -= 1
+        if let dataSource = dataSource{
+            dataSource.passData(count: index)
+        }
+        
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
     
