@@ -18,6 +18,12 @@ class QuestionIntroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initVars()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            if let controller = SolveQuestionsRootViewController.instance(){
+               self.navigationController?.pushViewController(controller, animated: true)
+            }
+            
+        }
 
     }
     func initVars(){
@@ -25,6 +31,7 @@ class QuestionIntroViewController: UIViewController {
         titleLabel.attributedText = titleLabel.text?.updateAttribute(font: "AppleSDGothicNeo-Bold", fontSize: 22.0, applyString: "O, X로 답해주세요.", lineSpacing: 10)
         titleLabel.textAlignment = .center
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.isNavigationBarHidden = true

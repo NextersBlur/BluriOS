@@ -18,7 +18,6 @@ class CreateQuestionsViewController: UIViewController {
         return UIStoryboard(name: "CreateQuestions", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? CreateQuestionsViewController
     }
     @IBOutlet weak private var questionCompleteButton: UIButton!
-    @IBOutlet private var questionTextField: [UITextField]!
     @IBOutlet weak private var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,10 +30,10 @@ class CreateQuestionsViewController: UIViewController {
         titleLabel.font = UIFont(name: "AppleSDGothicNeo-Regular", size: 22.0)
         titleLabel.attributedText = titleLabel.text?.updateAttribute(font: "AppleSDGothicNeo-Bold", fontSize: 22.0, applyString: "영혼의 친구를 찾아드릴게요.", lineSpacing: 10)
         
-        for textField in questionTextField{
-            textField.setBottomBorder()
-            textField.addTarget(self, action: #selector(changeTextField), for: .editingDidEnd)
-        }
+//        for textField in questionTextField{
+//            textField.setBottomBorder()
+//            textField.addTarget(self, action: #selector(changeTextField), for: .editingDidEnd)
+//        }
         
         questionCompleteButton.isEnabled = false
         tapGestureRecognizer = UITapGestureRecognizer()

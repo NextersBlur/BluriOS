@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppDelegate.shared = self
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        if let viewController = ChatViewController.instance(){
+        if let viewController = IntroViewController.instance(){
             let baseViewController = BaseNavigationController(rootViewController: viewController)
             AppDelegate.shared?.window?.rootViewController = baseViewController
         }
@@ -33,7 +33,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         else{
             print("already")
         }
-        
         return true
     }
 

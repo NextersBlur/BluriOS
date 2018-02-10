@@ -10,6 +10,8 @@ import UIKit
 
 class SolveQuestionsDataViewController: UIViewController {
 
+    var dataObject: String = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
