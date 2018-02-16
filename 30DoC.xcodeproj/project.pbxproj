@@ -15,6 +15,12 @@
 		14EBE1B420087867009DDE87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14EBE1B220087867009DDE87 /* Main.storyboard */; };
 		14EBE1B620087867009DDE87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14EBE1B520087867009DDE87 /* Assets.xcassets */; };
 		14EBE1B920087867009DDE87 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14EBE1B720087867009DDE87 /* LaunchScreen.storyboard */; };
+		30D1C5B82036DE0400AD346A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C5B72036DE0400AD346A /* UserManager.swift */; };
+		30D1C5D8203742DB00AD346A /* ObserveRoomResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C5D7203742DB00AD346A /* ObserveRoomResult.swift */; };
+		30D1C5DA203742FD00AD346A /* ChatVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C5D9203742FD00AD346A /* ChatVoice.swift */; };
+		30D1C5DC2037432500AD346A /* JSONWritable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C5DB2037432500AD346A /* JSONWritable.swift */; };
+		30D1C5DE2037433E00AD346A /* RandomQuestionSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C5DD2037433E00AD346A /* RandomQuestionSet.swift */; };
+		30D1C5E02037435D00AD346A /* QuestionAnswerPair.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D1C5DF2037435D00AD346A /* QuestionAnswerPair.swift */; };
 		8E1DE980CD254CBA11CC470D /* Pods_30DoC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FE3F6422D2CB3CFC04AE520 /* Pods_30DoC.framework */; };
 		C204D34820217C4200252C0D /* CreateQuestions.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C204D34720217C4200252C0D /* CreateQuestions.storyboard */; };
 		C204D34A20217C4F00252C0D /* CreateQuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C204D34920217C4F00252C0D /* CreateQuestionsViewController.swift */; };
@@ -33,7 +39,7 @@
 		C290767D20219D88006BEA15 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290767C20219D88006BEA15 /* NSObject+.swift */; };
 		C290768020219E03006BEA15 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290767F20219E03006BEA15 /* BaseNavigationController.swift */; };
 		C290768220219E12006BEA15 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C290768120219E12006BEA15 /* BaseViewController.swift */; };
-		C29076852021A6F7006BEA15 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29076842021A6F7006BEA15 /* Request.swift */; };
+		C29076852021A6F7006BEA15 /* APIConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29076842021A6F7006BEA15 /* APIConnector.swift */; };
 		C29076882021A735006BEA15 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29076872021A735006BEA15 /* User.swift */; };
 		C290768A2021AE6C006BEA15 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C29076892021AE6C006BEA15 /* HTTPMethod.swift */; };
 		C290768C2021AF37006BEA15 /* QuestionIntro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C290768B2021AF37006BEA15 /* QuestionIntro.storyboard */; };
@@ -54,6 +60,12 @@
 		14EBE1B520087867009DDE87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14EBE1B820087867009DDE87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14EBE1BA20087867009DDE87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30D1C5B72036DE0400AD346A /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		30D1C5D7203742DB00AD346A /* ObserveRoomResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserveRoomResult.swift; sourceTree = "<group>"; };
+		30D1C5D9203742FD00AD346A /* ChatVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVoice.swift; sourceTree = "<group>"; };
+		30D1C5DB2037432500AD346A /* JSONWritable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONWritable.swift; sourceTree = "<group>"; };
+		30D1C5DD2037433E00AD346A /* RandomQuestionSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionSet.swift; sourceTree = "<group>"; };
+		30D1C5DF2037435D00AD346A /* QuestionAnswerPair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerPair.swift; sourceTree = "<group>"; };
 		9FE3F6422D2CB3CFC04AE520 /* Pods_30DoC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30DoC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C204D34720217C4200252C0D /* CreateQuestions.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateQuestions.storyboard; sourceTree = "<group>"; };
 		C204D34920217C4F00252C0D /* CreateQuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionsViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +84,7 @@
 		C290767C20219D88006BEA15 /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
 		C290767F20219E03006BEA15 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		C290768120219E12006BEA15 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		C29076842021A6F7006BEA15 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		C29076842021A6F7006BEA15 /* APIConnector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConnector.swift; sourceTree = "<group>"; };
 		C29076872021A735006BEA15 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C29076892021AE6C006BEA15 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		C290768B2021AF37006BEA15 /* QuestionIntro.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuestionIntro.storyboard; sourceTree = "<group>"; };
@@ -125,6 +137,7 @@
 		14EBE1AD20087867009DDE87 /* 30DoC */ = {
 			isa = PBXGroup;
 			children = (
+				30D1C5B62036DDE700AD346A /* Manager */,
 				147AF027202EC47F0017DB28 /* Cell */,
 				C29076862021A725006BEA15 /* Model */,
 				C29076832021A6EB006BEA15 /* Request */,
@@ -147,6 +160,14 @@
 				E322F1F0B84A5870C83941CB /* Pods-30DoC.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		30D1C5B62036DDE700AD346A /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				30D1C5B72036DE0400AD346A /* UserManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		5F961151AF79EBD841B28B09 /* Frameworks */ = {
@@ -213,7 +234,7 @@
 		C29076832021A6EB006BEA15 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				C29076842021A6F7006BEA15 /* Request.swift */,
+				C29076842021A6F7006BEA15 /* APIConnector.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -224,6 +245,11 @@
 				C29076872021A735006BEA15 /* User.swift */,
 				C29076892021AE6C006BEA15 /* HTTPMethod.swift */,
 				14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */,
+				30D1C5D7203742DB00AD346A /* ObserveRoomResult.swift */,
+				30D1C5DD2037433E00AD346A /* RandomQuestionSet.swift */,
+				30D1C5D9203742FD00AD346A /* ChatVoice.swift */,
+				30D1C5DB2037432500AD346A /* JSONWritable.swift */,
+				30D1C5DF2037435D00AD346A /* QuestionAnswerPair.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,19 +400,25 @@
 				C29076882021A735006BEA15 /* User.swift in Sources */,
 				14711736202EDAEE00AB21F7 /* QuestionDataSource.swift in Sources */,
 				C290768020219E03006BEA15 /* BaseNavigationController.swift in Sources */,
+				30D1C5E02037435D00AD346A /* QuestionAnswerPair.swift in Sources */,
 				C2AA18312021B94500CB1F86 /* SolveQuestionsRootViewController.swift in Sources */,
+				30D1C5DE2037433E00AD346A /* RandomQuestionSet.swift in Sources */,
+				30D1C5D8203742DB00AD346A /* ObserveRoomResult.swift in Sources */,
 				C290767920217E80006BEA15 /* Attribute+.swift in Sources */,
 				C204D34A20217C4F00252C0D /* CreateQuestionsViewController.swift in Sources */,
 				C24BF3F82021522F004E4C90 /* IntroViewController.swift in Sources */,
+				30D1C5B82036DE0400AD346A /* UserManager.swift in Sources */,
 				C290767B20218250006BEA15 /* UITextField+.swift in Sources */,
 				C208A1D02022E1D500015075 /* AnalysisResultViewController.swift in Sources */,
+				30D1C5DC2037432500AD346A /* JSONWritable.swift in Sources */,
 				C290768220219E12006BEA15 /* BaseViewController.swift in Sources */,
 				C2AA18332021B9CF00CB1F86 /* SolveQuestionsDataViewController.swift in Sources */,
 				C208A1D62022E99E00015075 /* RecordingViewController.swift in Sources */,
 				147AF04B202EC6930017DB28 /* ModelController.swift in Sources */,
 				C290767D20219D88006BEA15 /* NSObject+.swift in Sources */,
+				30D1C5DA203742FD00AD346A /* ChatVoice.swift in Sources */,
 				C290768A2021AE6C006BEA15 /* HTTPMethod.swift in Sources */,
-				C29076852021A6F7006BEA15 /* Request.swift in Sources */,
+				C29076852021A6F7006BEA15 /* APIConnector.swift in Sources */,
 				C290768E2021AF4C006BEA15 /* QuestionIntroViewController.swift in Sources */,
 				C208A1CC2022DF0600015075 /* AnalysisViewController.swift in Sources */,
 				C208A1C82022A96B00015075 /* String+.swift in Sources */,

@@ -27,12 +27,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AppDelegate.shared?.window?.rootViewController = baseViewController
         }
         AppDelegate.shared?.window?.makeKeyAndVisible()
-        if UserDefaults.standard.object(forKey: "MyID") == nil{
-            let request = Request.postMyIdToServer()
-        }
-        else{
-            print("already")
-        }
+        
+        UserManager.shared.registerIfNotRegistered()
+        
         return true
     }
 
