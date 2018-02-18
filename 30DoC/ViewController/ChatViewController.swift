@@ -32,18 +32,18 @@ class ChatViewController: UIViewController {
     
     @IBAction private func StartRecordingButtonClicked(_ sender: UIButton) {
         if let viweController = RecordingViewController.instance(){
-            self.navigationController?.pushViewController(viweController, animated: true)
+            //self.navigationController?.pushViewController(viweController, animated: true)
         }
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.isNavigationBarHidden = false
-    }
+//    override func viewWillAppear(_ animated: Bool) {
+//        super.viewWillAppear(animated)
+//        navigationController?.isNavigationBarHidden = true
+//    }
+//    override func viewWillDisappear(_ animated: Bool) {
+//        super.viewWillDisappear(animated)
+//        navigationController?.isNavigationBarHidden = false
+//    }
     
     /*
     // MARK: - Navigation

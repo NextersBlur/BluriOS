@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppDelegate.shared = self
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.backgroundColor = UIColor.white
-        if let viewController = IntroViewController.instance(){
+        if let viewController = ChatViewController.instance(){
             let baseViewController = BaseNavigationController(rootViewController: viewController)
             AppDelegate.shared?.window?.rootViewController = baseViewController
         }
