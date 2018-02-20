@@ -10,6 +10,10 @@
 		14711736202EDAEE00AB21F7 /* QuestionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */; };
 		1471173A202EEBED00AB21F7 /* resultGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14711739202EEBED00AB21F7 /* resultGIF.gif */; };
 		147AF04B202EC6930017DB28 /* ModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147AF04A202EC6930017DB28 /* ModelController.swift */; };
+		148DF3A7203AE89E0088F205 /* MyChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148DF3A5203AE89E0088F205 /* MyChatTableViewCell.swift */; };
+		148DF3A8203AE89E0088F205 /* MyChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148DF3A6203AE89E0088F205 /* MyChatTableViewCell.xib */; };
+		148DF3AB203AE8C80088F205 /* OpponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148DF3A9203AE8C80088F205 /* OpponentTableViewCell.swift */; };
+		148DF3AC203AE8C80088F205 /* OpponentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148DF3AA203AE8C80088F205 /* OpponentTableViewCell.xib */; };
 		14EBE1AF20087867009DDE87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBE1AE20087867009DDE87 /* AppDelegate.swift */; };
 		14EBE1B120087867009DDE87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBE1B020087867009DDE87 /* ViewController.swift */; };
 		14EBE1B420087867009DDE87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14EBE1B220087867009DDE87 /* Main.storyboard */; };
@@ -53,6 +57,10 @@
 		14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataSource.swift; sourceTree = "<group>"; };
 		14711739202EEBED00AB21F7 /* resultGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = resultGIF.gif; sourceTree = "<group>"; };
 		147AF04A202EC6930017DB28 /* ModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelController.swift; sourceTree = "<group>"; };
+		148DF3A5203AE89E0088F205 /* MyChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatTableViewCell.swift; sourceTree = "<group>"; };
+		148DF3A6203AE89E0088F205 /* MyChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChatTableViewCell.xib; sourceTree = "<group>"; };
+		148DF3A9203AE8C80088F205 /* OpponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentTableViewCell.swift; sourceTree = "<group>"; };
+		148DF3AA203AE8C80088F205 /* OpponentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpponentTableViewCell.xib; sourceTree = "<group>"; };
 		14EBE1AB20087867009DDE87 /* 30DoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30DoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EBE1AE20087867009DDE87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14EBE1B020087867009DDE87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,6 +119,10 @@
 		147AF027202EC47F0017DB28 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				148DF3A5203AE89E0088F205 /* MyChatTableViewCell.swift */,
+				148DF3A6203AE89E0088F205 /* MyChatTableViewCell.xib */,
+				148DF3A9203AE8C80088F205 /* OpponentTableViewCell.swift */,
+				148DF3AA203AE8C80088F205 /* OpponentTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -138,12 +150,12 @@
 			isa = PBXGroup;
 			children = (
 				30D1C5B62036DDE700AD346A /* Manager */,
-				147AF027202EC47F0017DB28 /* Cell */,
 				C29076862021A725006BEA15 /* Model */,
 				C29076832021A6EB006BEA15 /* Request */,
 				C290767E20219DEF006BEA15 /* Base */,
 				C290767720217E59006BEA15 /* Common */,
 				C24BF3F620214F7F004E4C90 /* ViewController */,
+				147AF027202EC47F0017DB28 /* Cell */,
 				C24BF3F520214F15004E4C90 /* Storyboard */,
 				14EBE1B520087867009DDE87 /* Assets.xcassets */,
 				14EBE1AE20087867009DDE87 /* AppDelegate.swift */,
@@ -321,8 +333,10 @@
 				14EBE1B920087867009DDE87 /* LaunchScreen.storyboard in Resources */,
 				1471173A202EEBED00AB21F7 /* resultGIF.gif in Resources */,
 				14EBE1B620087867009DDE87 /* Assets.xcassets in Resources */,
+				148DF3A8203AE89E0088F205 /* MyChatTableViewCell.xib in Resources */,
 				14EBE1B420087867009DDE87 /* Main.storyboard in Resources */,
 				C2AA182F2021B91F00CB1F86 /* SolveQuestions.storyboard in Resources */,
+				148DF3AC203AE8C80088F205 /* OpponentTableViewCell.xib in Resources */,
 				C24BF3F420214F11004E4C90 /* Intro.storyboard in Resources */,
 				C208A1CA2022DEF800015075 /* Analysis.storyboard in Resources */,
 				C208A1D22022E43300015075 /* Chat.storyboard in Resources */,
@@ -344,6 +358,7 @@
 				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
 				"${BUILT_PRODUCTS_DIR}/GradientCircularProgress/GradientCircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/KYCircularProgress/KYCircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/RNPulseButton/RNPulseButton.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -351,6 +366,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientCircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYCircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNPulseButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -397,9 +413,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148DF3AB203AE8C80088F205 /* OpponentTableViewCell.swift in Sources */,
 				C29076882021A735006BEA15 /* User.swift in Sources */,
 				14711736202EDAEE00AB21F7 /* QuestionDataSource.swift in Sources */,
 				C290768020219E03006BEA15 /* BaseNavigationController.swift in Sources */,
+				148DF3A7203AE89E0088F205 /* MyChatTableViewCell.swift in Sources */,
 				30D1C5E02037435D00AD346A /* QuestionAnswerPair.swift in Sources */,
 				C2AA18312021B94500CB1F86 /* SolveQuestionsRootViewController.swift in Sources */,
 				30D1C5DE2037433E00AD346A /* RandomQuestionSet.swift in Sources */,
