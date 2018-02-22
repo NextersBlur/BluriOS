@@ -17,7 +17,7 @@ class SolveQuestionsDataViewController: UIViewController {
     @IBOutlet weak var questionCount: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.plain, target:nil, action:nil)
         // Do any additional setup after loading the view.
     }
 

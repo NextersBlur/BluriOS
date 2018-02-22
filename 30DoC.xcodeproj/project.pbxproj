@@ -17,6 +17,7 @@
 		148DF3A8203AE89E0088F205 /* MyChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148DF3A6203AE89E0088F205 /* MyChatTableViewCell.xib */; };
 		148DF3AB203AE8C80088F205 /* OpponentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148DF3A9203AE8C80088F205 /* OpponentTableViewCell.swift */; };
 		148DF3AC203AE8C80088F205 /* OpponentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 148DF3AA203AE8C80088F205 /* OpponentTableViewCell.xib */; };
+		148ED0B1203F0F710080BEC3 /* CountingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 148ED0B0203F0F710080BEC3 /* CountingLabel.swift */; };
 		14EBE1AF20087867009DDE87 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBE1AE20087867009DDE87 /* AppDelegate.swift */; };
 		14EBE1B120087867009DDE87 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14EBE1B020087867009DDE87 /* ViewController.swift */; };
 		14EBE1B420087867009DDE87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14EBE1B220087867009DDE87 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		148DF3A6203AE89E0088F205 /* MyChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChatTableViewCell.xib; sourceTree = "<group>"; };
 		148DF3A9203AE8C80088F205 /* OpponentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentTableViewCell.swift; sourceTree = "<group>"; };
 		148DF3AA203AE8C80088F205 /* OpponentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpponentTableViewCell.xib; sourceTree = "<group>"; };
+		148ED0B0203F0F710080BEC3 /* CountingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountingLabel.swift; sourceTree = "<group>"; };
 		14EBE1AB20087867009DDE87 /* 30DoC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30DoC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14EBE1AE20087867009DDE87 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14EBE1B020087867009DDE87 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				14EBE1B720087867009DDE87 /* LaunchScreen.storyboard */,
 				14EBE1BA20087867009DDE87 /* Info.plist */,
 				1405494A203ED74A00F5D1EF /* OXButton.swift */,
+				148ED0B0203F0F710080BEC3 /* CountingLabel.swift */,
 			);
 			path = 30DoC;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				C29076882021A735006BEA15 /* User.swift in Sources */,
 				14711736202EDAEE00AB21F7 /* QuestionDataSource.swift in Sources */,
 				C290768020219E03006BEA15 /* BaseNavigationController.swift in Sources */,
+				148ED0B1203F0F710080BEC3 /* CountingLabel.swift in Sources */,
 				148DF3A7203AE89E0088F205 /* MyChatTableViewCell.swift in Sources */,
 				30D1C5E02037435D00AD346A /* QuestionAnswerPair.swift in Sources */,
 				C2AA18312021B94500CB1F86 /* SolveQuestionsRootViewController.swift in Sources */,

@@ -11,7 +11,7 @@ import UIKit
 class CreateQuestionsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-    
+      var placeholderArr = ["맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다"]
     @IBOutlet weak var backGroundImageView: UIImageView!
     var tapGestureRecognizer : UITapGestureRecognizer!
 
@@ -69,7 +69,7 @@ class CreateQuestionsViewController: UIViewController {
     }
 
     @IBAction func backButtonClicked(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        print("a")
     }
     
 
@@ -89,6 +89,7 @@ extension CreateQuestionsViewController : UITableViewDelegate,UITableViewDataSou
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CreateQuestionTableViewCell", for: indexPath) as! CreateQuestionTableViewCell
         
+        cell.configure(placeholderArr[indexPath.row])
         return cell
     }
 }

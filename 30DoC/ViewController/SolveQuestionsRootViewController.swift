@@ -10,6 +10,7 @@ import UIKit
 
 class SolveQuestionsRootViewController: UIViewController {
 
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionProgressBar: UIProgressView!
     @IBOutlet weak var oButton: UIButton!
@@ -24,6 +25,7 @@ class SolveQuestionsRootViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.initPageController()
+        backButton.layer.zPosition = 1
         oButton.layer.zPosition = 1
         xButton.layer.zPosition = 1
         questionLabel.layer.zPosition = 1
@@ -35,11 +37,15 @@ class SolveQuestionsRootViewController: UIViewController {
         
         //init progress and label with first state
         passData(count: 0)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = true
+        
+        
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
@@ -67,7 +73,16 @@ class SolveQuestionsRootViewController: UIViewController {
         self.pageViewController!.view.frame = pageViewRect
         self.pageViewController!.didMove(toParentViewController: self)
     }
-
+    @IBAction func didBackButtonTap(_ sender: Any) {
+        print("A")
+        
+        //지금 dataView가 root보다 다 앞에 와있어서 아무것도 터치가 안댐
+        
+        let viewControllers: [UIViewController] = self.navigationController!.viewControllers as [UIViewController]
+        self.navigationController!.popToViewController(viewControllers[viewControllers.count - 3], animated: true)
+    
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

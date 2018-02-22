@@ -8,12 +8,14 @@
 
 import UIKit
 import FLAnimatedImage
-import RPCircularProgress
 
 class AnalysisViewController: UIViewController {
 
     
  
+    @IBOutlet weak var percentageLabel: AnimatedLabel!
+    
+    
     static func instance() -> AnalysisViewController? {
         return UIStoryboard(name: "Analysis", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? AnalysisViewController
     }
@@ -21,6 +23,7 @@ class AnalysisViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        percentageLabel.countFromZero(to: 100, duration: 10)
         // Do any additional setup after loading the view.
     }
 

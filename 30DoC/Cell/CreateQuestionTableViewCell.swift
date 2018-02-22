@@ -10,14 +10,18 @@ import UIKit
 
 class CreateQuestionTableViewCell: UITableViewCell {
 
+  
     @IBOutlet weak var xButton: UIButton!
     @IBOutlet weak var oButton: UIButton!
     @IBOutlet weak var questionTextfield: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
-        
-        // Initialization code
+    
+    }
+    func configure(_ placeholder : String){
+        self.questionTextfield.placeholder = nil
+        self.questionTextfield.placeholder = placeholder
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

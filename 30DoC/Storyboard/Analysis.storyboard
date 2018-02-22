@@ -32,12 +32,20 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfJ-KB-Zxg" customClass="AnimatedLabel" customModule="_0DoC" customModuleProvider="target">
+                                <rect key="frame" x="129" y="313.5" width="117" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="JfJ-KB-Zxg" firstAttribute="centerX" secondItem="hSZ-Hl-4YQ" secondAttribute="centerX" id="4pR-qr-lcW"/>
                             <constraint firstItem="0K4-a7-MKp" firstAttribute="trailing" secondItem="hSZ-Hl-4YQ" secondAttribute="trailing" id="KKq-Mw-avn"/>
                             <constraint firstItem="0K4-a7-MKp" firstAttribute="leading" secondItem="hSZ-Hl-4YQ" secondAttribute="leading" id="KL5-j6-6RK"/>
                             <constraint firstItem="0K4-a7-MKp" firstAttribute="top" secondItem="lQL-2K-xl1" secondAttribute="top" id="dCj-ol-ZSb"/>
+                            <constraint firstItem="JfJ-KB-Zxg" firstAttribute="centerY" secondItem="hSZ-Hl-4YQ" secondAttribute="centerY" id="dth-Ha-CCC"/>
                             <constraint firstItem="hSZ-Hl-4YQ" firstAttribute="bottom" secondItem="uUV-DU-3EU" secondAttribute="bottom" constant="75" id="meG-kf-blO"/>
                             <constraint firstItem="hSZ-Hl-4YQ" firstAttribute="trailing" secondItem="uUV-DU-3EU" secondAttribute="trailing" constant="49" id="unF-eD-NsL"/>
                             <constraint firstItem="uUV-DU-3EU" firstAttribute="leading" secondItem="hSZ-Hl-4YQ" secondAttribute="leading" constant="49" id="wGe-P8-z2Y"/>
@@ -45,6 +53,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hSZ-Hl-4YQ"/>
                     </view>
+                    <connections>
+                        <outlet property="percentageLabel" destination="JfJ-KB-Zxg" id="QSi-xn-RN4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wmz-mv-B8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
