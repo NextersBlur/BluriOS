@@ -24,6 +24,12 @@ class AnalysisViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         percentageLabel.countFromZero(to: 100, duration: 10)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+           
+            if let viewController = AnalysisResultViewController.instance(){
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -32,6 +38,14 @@ class AnalysisViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
 
     /*
     // MARK: - Navigation
