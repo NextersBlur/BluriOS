@@ -7,12 +7,10 @@
 //
 
 import UIKit
-import RNPulseButton
 
 
 class RecordingViewController: UIViewController {
     
-    @IBOutlet weak var recodeButtonView: RNPulseButton!
     @IBOutlet weak var recodingTimeLabel: UILabel!
     
     static func instance() -> RecordingViewController? {
@@ -22,13 +20,12 @@ class RecordingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        recodeButtonView.start()
-    recodeButtonView.addTarget(self, action: #selector(didRecodingButtonViewTap), for: .touchUpInside)
+       
         // Do any additional setup after loading the view.
     }
 
     @objc func didRecodingButtonViewTap(){
-        recodeButtonView.start()
+        //recodeButtonView.start()
         print("a")
     }
     override func viewWillAppear(_ animated: Bool) {

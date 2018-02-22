@@ -8,10 +8,12 @@
 
 import UIKit
 import FLAnimatedImage
+import RPCircularProgress
 
 class AnalysisViewController: UIViewController {
 
     
+ 
     static func instance() -> AnalysisViewController? {
         return UIStoryboard(name: "Analysis", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? AnalysisViewController
     }

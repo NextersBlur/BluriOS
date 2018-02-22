@@ -96,13 +96,13 @@
                                             </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFM-xT-Xcg">
-                                            <rect key="frame" x="8" y="549" width="398" height="21"/>
+                                            <rect key="frame" x="8" y="542" width="398" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvU-hz-BPu" customClass="RNPulseButton" customModule="RNPulseButton">
-                                            <rect key="frame" x="161" y="590" width="93" height="93"/>
+                                            <rect key="frame" x="161" y="583" width="93" height="93"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stop" translatesAutoresizingMaskIntoConstraints="NO" id="ZKY-8x-VCy">
                                                     <rect key="frame" x="0.0" y="0.0" width="93" height="93"/>
@@ -124,7 +124,7 @@
                                                     <integer key="value" value="7"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="pulseDuration">
-                                                    <real key="value" value="6"/>
+                                                    <real key="value" value="1"/>
                                                 </userDefinedRuntimeAttribute>
                                                 <userDefinedRuntimeAttribute type="number" keyPath="intervalTime">
                                                     <real key="value" value="11"/>
@@ -150,7 +150,7 @@
                                         <constraint firstItem="AFM-xT-Xcg" firstAttribute="leading" secondItem="ypH-Ao-k4W" secondAttribute="leading" constant="8" id="iZT-OP-COD"/>
                                         <constraint firstAttribute="trailing" secondItem="AFM-xT-Xcg" secondAttribute="trailing" constant="8" id="qwm-jH-r8s"/>
                                         <constraint firstItem="HUU-yD-dEE" firstAttribute="leading" secondItem="ypH-Ao-k4W" secondAttribute="leading" constant="46" id="tAO-NB-6GX"/>
-                                        <constraint firstAttribute="bottom" secondItem="pvU-hz-BPu" secondAttribute="bottom" constant="53" id="tkA-Z9-G5J"/>
+                                        <constraint firstAttribute="bottom" secondItem="pvU-hz-BPu" secondAttribute="bottom" constant="60" id="tkA-Z9-G5J"/>
                                         <constraint firstAttribute="bottom" secondItem="HUU-yD-dEE" secondAttribute="bottom" constant="85" id="vSs-eA-eTz"/>
                                     </constraints>
                                 </view>

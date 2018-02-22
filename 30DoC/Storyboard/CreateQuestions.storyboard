@@ -75,6 +75,7 @@
                     <connections>
                         <outlet property="backGroundImageView" destination="2ZG-Gn-Lpi" id="ev0-gk-Csn"/>
                         <outlet property="questionCompleteButton" destination="osS-DQ-8Ga" id="cZC-Pc-eyn"/>
+                        <outlet property="tableView" destination="IKT-gs-k6u" id="10e-M9-P1I"/>
                         <outlet property="titleLabel" destination="jvf-Qp-LYv" id="Myz-uB-8qq"/>
                     </connections>
                 </viewController>
