@@ -9,7 +9,6 @@
 import Foundation
 import Alamofire
 
-
 class APIConnector {
    
     private static var _instance : APIConnector?
@@ -106,7 +105,7 @@ class APIConnector {
                 return
             }
             
-            let questions = result.flatMap{ QuestionAnswerPair(dict: $0) }
+            let questions = result.compactMap { QuestionAnswerPair(dict: $0) }
             completion(questions)
         }
     }

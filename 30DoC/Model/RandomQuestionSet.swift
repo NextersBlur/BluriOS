@@ -21,6 +21,6 @@ extension RandomQuestionSet {
         }
         
         self.memberId = memberId
-        self.questionList = quizList.flatMap { QuestionAnswerPair(dict : $0) }
+        self.questionList = quizList.compactMap { QuestionAnswerPair(dict : $0) }
     }
 }

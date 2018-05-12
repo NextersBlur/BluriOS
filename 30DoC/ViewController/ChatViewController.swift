@@ -27,10 +27,8 @@ class ChatViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.register(UINib(nibName: "MyChatTableViewCell", bundle: nil), forCellReuseIdentifier: "MyChatTableViewCell")
         tableView.register( UINib(nibName: "OpponentTableViewCell", bundle: nil), forCellReuseIdentifier: "OpponentTableViewCell")
-        // Do any additional setup after loading the view.
     }
     func initVars(){
-       //View의 위쪽에만 선을 주고, shadow주기
         
     }
     
@@ -44,26 +42,6 @@ class ChatViewController: UIViewController {
             //self.navigationController?.pushViewController(viweController, animated: true)
         }
     }
-    
-//    override func viewWillAppear(_ animated: Bool) {
-//        super.viewWillAppear(animated)
-//        navigationController?.isNavigationBarHidden = true
-//    }
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        navigationController?.isNavigationBarHidden = false
-//    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
 extension ChatViewController : UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

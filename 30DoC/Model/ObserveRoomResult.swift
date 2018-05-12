@@ -21,6 +21,6 @@ extension ObserveRoomResult {
         }
         
         self.offset = offset
-        self.chatVoiceList = chatVoiceDictList.flatMap{ ChatVoice(dict: $0) }
+        self.chatVoiceList = chatVoiceDictList.compactMap { ChatVoice(dict: $0) }
     }
 }
