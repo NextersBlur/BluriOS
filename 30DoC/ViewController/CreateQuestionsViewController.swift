@@ -103,9 +103,11 @@ class CreateQuestionTableViewCell: UITableViewCell {
     override func prepareForReuse() {
         
     }
+    
     func configure(_ question: String) {
-        
+        self.questionInputTextField.placeholder = question
     }
+    
     @IBAction func oButtonDidTap(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
         if self.xButton.isSelected { self.xButton.isSelected = !self.xButton.isSelected }

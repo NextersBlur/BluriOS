@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -52,39 +53,57 @@
                                             <rect key="frame" x="0.0" y="0.0" width="275" height="84.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YXE-wT-Apg">
-                                                    <rect key="frame" x="15" y="11" width="245" height="61"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YXE-wT-Apg">
+                                                    <rect key="frame" x="15" y="11" width="245" height="63"/>
                                                     <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bq2-h1-h36">
-                                                            <rect key="frame" x="199" y="19" width="16" height="22"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bq2-h1-h36">
+                                                            <rect key="frame" x="196" y="20.666666666666668" width="16" height="22.000000000000004"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="16" id="Zol-85-4Ve"/>
+                                                            </constraints>
                                                             <state key="normal" image="aO"/>
                                                             <state key="selected" image="oval8Copy"/>
                                                             <connections>
                                                                 <action selector="oButtonDidTap:" destination="yJo-w8-Vw2" eventType="touchUpInside" id="dzW-Fm-cqH"/>
                                                             </connections>
                                                         </button>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ9-9k-4Bj">
-                                                            <rect key="frame" x="223" y="19" width="14" height="22"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ9-9k-4Bj">
+                                                            <rect key="frame" x="229" y="20.666666666666668" width="16" height="22.000000000000004"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="16" id="fT6-W8-QYu"/>
+                                                            </constraints>
                                                             <state key="normal" image="aX"/>
                                                             <state key="selected" image="aXPurple"/>
                                                             <connections>
                                                                 <action selector="xButtonDidTap:" destination="yJo-w8-Vw2" eventType="touchUpInside" id="Gie-Jb-VRU"/>
                                                             </connections>
                                                         </button>
-                                                        <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jqi-Mn-Jys">
-                                                            <rect key="frame" x="8" y="15" width="183" height="30"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jqi-Mn-Jys">
+                                                            <rect key="frame" x="0.0" y="15" width="188" height="38"/>
                                                             <nil key="textColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits"/>
                                                         </textField>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="YQ9-9k-4Bj" secondAttribute="trailing" id="MbR-CF-8lm"/>
+                                                        <constraint firstItem="bq2-h1-h36" firstAttribute="centerY" secondItem="YXE-wT-Apg" secondAttribute="centerY" id="S1g-wy-xZe"/>
+                                                        <constraint firstItem="Jqi-Mn-Jys" firstAttribute="leading" secondItem="YXE-wT-Apg" secondAttribute="leading" id="Uxf-zp-7PQ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Jqi-Mn-Jys" secondAttribute="bottom" constant="10" id="XEx-oM-8Rn"/>
+                                                        <constraint firstItem="YQ9-9k-4Bj" firstAttribute="centerY" secondItem="YXE-wT-Apg" secondAttribute="centerY" id="YyE-Zl-u5m"/>
+                                                        <constraint firstItem="YQ9-9k-4Bj" firstAttribute="leading" secondItem="bq2-h1-h36" secondAttribute="trailing" constant="17" id="Z8c-3k-lxT"/>
+                                                        <constraint firstItem="Jqi-Mn-Jys" firstAttribute="top" secondItem="YXE-wT-Apg" secondAttribute="top" constant="15" id="jq6-QS-ZKl"/>
+                                                        <constraint firstItem="bq2-h1-h36" firstAttribute="leading" secondItem="Jqi-Mn-Jys" secondAttribute="trailing" constant="8" id="onJ-52-MlI"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="YXE-wT-Apg" firstAttribute="top" secondItem="oO1-7z-Huy" secondAttribute="topMargin" id="9bC-SR-7tc"/>
+                                                <constraint firstItem="YXE-wT-Apg" firstAttribute="leading" secondItem="oO1-7z-Huy" secondAttribute="leadingMargin" id="H2U-FA-uG3"/>
+                                                <constraint firstItem="YXE-wT-Apg" firstAttribute="trailing" secondItem="oO1-7z-Huy" secondAttribute="trailingMargin" id="hmH-gO-Yax"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="YXE-wT-Apg" secondAttribute="bottom" id="vj7-jW-GeM"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="oButton" destination="bq2-h1-h36" id="lIm-i6-71Z"/>
