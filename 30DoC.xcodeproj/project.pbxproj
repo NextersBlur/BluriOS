@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14054948203ED37D00F5D1EF /* CreateQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14054946203ED37D00F5D1EF /* CreateQuestionTableViewCell.swift */; };
-		14054949203ED37D00F5D1EF /* CreateQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14054947203ED37D00F5D1EF /* CreateQuestionTableViewCell.xib */; };
 		1405494B203ED74A00F5D1EF /* OXButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1405494A203ED74A00F5D1EF /* OXButton.swift */; };
 		14711736202EDAEE00AB21F7 /* QuestionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */; };
 		1471173A202EEBED00AB21F7 /* resultGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 14711739202EEBED00AB21F7 /* resultGIF.gif */; };
@@ -58,8 +56,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		14054946203ED37D00F5D1EF /* CreateQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateQuestionTableViewCell.swift; sourceTree = "<group>"; };
-		14054947203ED37D00F5D1EF /* CreateQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateQuestionTableViewCell.xib; sourceTree = "<group>"; };
 		1405494A203ED74A00F5D1EF /* OXButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OXButton.swift; sourceTree = "<group>"; };
 		14711735202EDAEE00AB21F7 /* QuestionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDataSource.swift; sourceTree = "<group>"; };
 		14711739202EEBED00AB21F7 /* resultGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = resultGIF.gif; sourceTree = "<group>"; };
@@ -131,8 +127,6 @@
 				148DF3A6203AE89E0088F205 /* MyChatTableViewCell.xib */,
 				148DF3A9203AE8C80088F205 /* OpponentTableViewCell.swift */,
 				148DF3AA203AE8C80088F205 /* OpponentTableViewCell.xib */,
-				14054946203ED37D00F5D1EF /* CreateQuestionTableViewCell.swift */,
-				14054947203ED37D00F5D1EF /* CreateQuestionTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -342,7 +336,6 @@
 				C204D34820217C4200252C0D /* CreateQuestions.storyboard in Resources */,
 				C208A1CE2022E1CC00015075 /* AnalysisResult.storyboard in Resources */,
 				14EBE1B920087867009DDE87 /* LaunchScreen.storyboard in Resources */,
-				14054949203ED37D00F5D1EF /* CreateQuestionTableViewCell.xib in Resources */,
 				1471173A202EEBED00AB21F7 /* resultGIF.gif in Resources */,
 				14EBE1B620087867009DDE87 /* Assets.xcassets in Resources */,
 				148DF3A8203AE89E0088F205 /* MyChatTableViewCell.xib in Resources */,
@@ -418,7 +411,6 @@
 				148DF3A7203AE89E0088F205 /* MyChatTableViewCell.swift in Sources */,
 				30D1C5E02037435D00AD346A /* QuestionAnswerPair.swift in Sources */,
 				C2AA18312021B94500CB1F86 /* SolveQuestionsRootViewController.swift in Sources */,
-				14054948203ED37D00F5D1EF /* CreateQuestionTableViewCell.swift in Sources */,
 				30D1C5DE2037433E00AD346A /* RandomQuestionSet.swift in Sources */,
 				30D1C5D8203742DB00AD346A /* ObserveRoomResult.swift in Sources */,
 				C290767920217E80006BEA15 /* Attribute+.swift in Sources */,

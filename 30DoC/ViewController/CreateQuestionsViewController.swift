@@ -11,7 +11,7 @@ import UIKit
 class CreateQuestionsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
-      var placeholderArr = ["맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다","맥주보다 소주가 좋다"]
+      var placeholderArr = ["맥주보다 소주가 좋다", "막창 대창을 즐겨먹는다.","발라드보다 힙합을 좋아한다.","불현듯 떠나는 여행을 즐긴다.","겨울엔 호떡보다 붕어빵이다.", "유재윤은 바보다", "나는 짱이다"]
     @IBOutlet weak var backGroundImageView: UIImageView!
     var tapGestureRecognizer : UITapGestureRecognizer!
 
@@ -25,9 +25,7 @@ class CreateQuestionsViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        let nib = UINib(nibName: "CreateQuestionTableViewCell", bundle: nil)
-        self.tableView.register(nib, forCellReuseIdentifier: "CreateQuestionTableViewCell")
-        initVars()
+        self.initVars()
 
     }
     
@@ -40,11 +38,11 @@ class CreateQuestionsViewController: UIViewController {
 //            textField.addTarget(self, action: #selector(changeTextField), for: .editingDidEnd)
 //        }
         
-        questionCompleteButton.isEnabled = false
-        tapGestureRecognizer = UITapGestureRecognizer()
-        tapGestureRecognizer.addTarget(self, action: #selector(tapImage))
-        backGroundImageView.isUserInteractionEnabled = true
-        backGroundImageView.addGestureRecognizer(tapGestureRecognizer)
+        self.questionCompleteButton.isEnabled = false
+        self.tapGestureRecognizer = UITapGestureRecognizer()
+        self.tapGestureRecognizer.addTarget(self, action: #selector(tapImage))
+        self.backGroundImageView.isUserInteractionEnabled = true
+        self.backGroundImageView.addGestureRecognizer(tapGestureRecognizer)
         
     }
     
@@ -79,7 +77,7 @@ extension CreateQuestionsViewController : UITextFieldDelegate{
 }
 extension CreateQuestionsViewController : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.placeholderArr.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -88,8 +86,35 @@ extension CreateQuestionsViewController : UITableViewDelegate,UITableViewDataSou
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CreateQuestionTableViewCell", for: indexPath) as! CreateQuestionTableViewCell
-        
         cell.configure(placeholderArr[indexPath.row])
         return cell
     }
 }
+
+class CreateQuestionTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var xButton: UIButton!
+    @IBOutlet weak var oButton: UIButton!
+    @IBOutlet weak var questionContainerView: UIView!
+    @IBOutlet weak var questionInputTextField: UITextField!
+    override func awakeFromNib() {
+        self.selectionStyle = .none
+    }
+    override func prepareForReuse() {
+        
+    }
+    func configure(_ question: String) {
+        
+    }
+    @IBAction func oButtonDidTap(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        if self.xButton.isSelected { self.xButton.isSelected = !self.xButton.isSelected }
+    }
+    
+    @IBAction func xButtonDidTap(_ sender: UIButton) {
+        sender.isSelected = !sender.isSelected
+        if self.oButton.isSelected { self.oButton.isSelected = !self.xButton.isSelected }
+    }
+    
+}
+
